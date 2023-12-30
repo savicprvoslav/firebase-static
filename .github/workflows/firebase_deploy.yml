@@ -15,7 +15,7 @@ jobs:
       - name: Set Up GCP Credentials
         run: |
          echo "${{ secrets.GCP_SA_KEY }}" > /opt/gcp_key.json
-         echo "GOOGLE_APPLICATION_CREDENTIALS=/opt/gcp_key.json" >> $GITHUB_ENV
+         cat /opt/gcp_key.json  # Temporarily add this line to debug the file content
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
