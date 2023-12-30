@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "https://static-498a9.web.app",
     "public": "public",
     "ignore": [
       "firebase.json",
